@@ -13,17 +13,7 @@ public class IfProblems {
     // caughtSpeeding(65, false) → 1
     // caughtSpeeding(65, true) → 0
     public static int caughtSpeeding(int speed, boolean isBirthday) {
-        if (isBirthday) {
-            speed -= 5;
-        }
-
-        if (speed > 80) {
-            return 2;
-        } else if (speed > 60) {
-            return 1;
-        } else {
-            return 0;
-        }
+        return -1;
 
     }
 
@@ -36,25 +26,7 @@ public class IfProblems {
     // in1To10(11, true) → true
 
     public static boolean in1To10(int n, boolean outsideMode) {
-        if (outsideMode) {
-            if (n <= 1) {
-                return true;
-            }
-            if (n >= 10) {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            if (n >= 1) {
-                if (n <= 10) {
-                    return true;
-                }
-                return false;
-            } else {
-                return false;
-            }
-        }
+       return false;
 
     }
 
@@ -66,19 +38,7 @@ public class IfProblems {
     // nearTen(19) → true
 
     public static boolean nearTen(int num) {
-        if (num % 10 == 0) {
-            return true;
-        } else if ((num + 1) % 10 == 0) {
-            return true;
-        } else if ((num + 2) % 10 == 0) {
-            return true;
-        } else if ((num - 1) % 10 == 0) {
-            return true;
-        } else if ((num - 2) % 10 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return false;
 
     }
 
